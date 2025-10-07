@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Home() {
     return (
         <main className="pt-[73px]">
-            <div className="flex h-[407px] w-full flex-col items-center justify-center gap-[20px] bg-gray-400/75 bg-[url('/hero.png')] bg-cover bg-center bg-no-repeat px-[29px] text-white bg-blend-multiply">
+            <div className="flex h-[407px] w-full flex-col items-center justify-center gap-[20px] bg-gray-400/75 bg-[url('/hero.png')] bg-[750px_auto] bg-center bg-no-repeat px-[29px] text-white bg-blend-multiply sm:bg-cover">
                 <h2 className="max-w-[500px] text-center text-[28px] font-bold">
                     Berdaya Bersama, Berkarya untuk Sesama
                 </h2>
