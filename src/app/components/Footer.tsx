@@ -10,7 +10,7 @@ import {
 
 const Footer = () => {
     return (
-        <footer className="bg-warna-1 flex flex-col gap-[32px] p-[56px] text-white">
+        <footer className="bg-warna-1 mt-[400px] flex flex-col gap-[32px] p-[56px] text-white">
             <div className="flex flex-col gap-[32px] px-[10px] xl:mx-auto xl:w-[925px] xl:flex-row xl:justify-between">
                 <div className="max-w-[197px]">
                     <h2 className="font-medium">
@@ -65,19 +65,19 @@ const Footer = () => {
                     <h2 className="mb-[4px] text-[24px] font-semibold">
                         Kontak
                     </h2>
-                    <div className="flex items-start gap-[12px] text-[12px] text-[#D8BDFF]">
-                        <LocationIcon size={22} />
+                    <div className="flex items-start gap-[12px] text-[12px]">
+                        <LocationIcon size={22} className="text-[#D8BDFF]" />
                         <span className="flex-1">
                             Jl. Mawar No. 10, Banguntapan, Bantul, Daerah
                             Istimewa Yogyakarta 55198
                         </span>
                     </div>
-                    <div className="flex items-start gap-[12px] text-[12px] text-[#D8BDFF]">
-                        <TelephoneIcon size={22} />
+                    <div className="flex items-start gap-[12px] text-[12px]">
+                        <TelephoneIcon size={22} className="text-[#D8BDFF]" />
                         <span className="flex-1">+62 812-3456-7890</span>
                     </div>
-                    <div className="flex items-start gap-[12px] text-[12px] text-[#D8BDFF]">
-                        <RoundMailIcon size={22} />
+                    <div className="flex items-start gap-[12px] text-[12px]">
+                        <RoundMailIcon size={22} className="text-[#D8BDFF]" />
                         <span className="flex-1">info@humarasa.org</span>
                     </div>
 

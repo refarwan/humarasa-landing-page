@@ -128,3 +128,24 @@ export const RoundMailIcon = ({ size = 24, className }: Props) => {
         </svg>
     );
 };
+
+export const ArrowDownIcon = ({ size = 24, className }: Props) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={size}
+            height={size}
+            viewBox="0 0 14 8"
+            fill="none"
+            className={className}
+        >
+            <path
+                d="M1 1.32333L7 6.67667L13 1.32333"
+                stroke="currentColor"
+                strokeWidth={2}
+                strokeLinecap="round"
+                strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
