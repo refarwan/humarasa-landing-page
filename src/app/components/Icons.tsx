@@ -1,9 +1,9 @@
-interface Props {
+export interface IconProps {
     size?: number;
     className?: string;
 }
 
-export const FacebookIcon = ({ size = 24, className }: Props) => {
+export const FacebookIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -21,7 +21,7 @@ export const FacebookIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const InstagramIcon = ({ size = 24, className }: Props) => {
+export const InstagramIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -39,7 +39,7 @@ export const InstagramIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const HamburgerIcon = ({ size = 24, className }: Props) => {
+export const HamburgerIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -57,7 +57,7 @@ export const HamburgerIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const YoutubeIcon = ({ size = 24, className }: Props) => {
+export const YoutubeIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +75,7 @@ export const YoutubeIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const LocationIcon = ({ size = 24, className }: Props) => {
+export const LocationIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -93,7 +93,7 @@ export const LocationIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const TelephoneIcon = ({ size = 24, className }: Props) => {
+export const TelephoneIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ export const TelephoneIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const RoundMailIcon = ({ size = 24, className }: Props) => {
+export const RoundMailIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -129,7 +129,7 @@ export const RoundMailIcon = ({ size = 24, className }: Props) => {
     );
 };
 
-export const ArrowDownIcon = ({ size = 24, className }: Props) => {
+export const ArrowDownIcon = ({ size = 24, className }: IconProps) => {
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -145,6 +145,30 @@ export const ArrowDownIcon = ({ size = 24, className }: Props) => {
                 strokeWidth={2}
                 strokeLinecap="round"
                 strokeLinejoin="round"
+            />
+        </svg>
+    );
+};
+
+export const RegisterBookIcon = ({ size = 24, className }: IconProps) => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width={size}
+            height={size}
+            viewBox="0 0 64 51"
+            fill="none"
+            className={className}
+        >
+            <path
+                d="M52.2969 33.3172C46.5625 33.2578 43.3641 33.8359 37.2781 36.3219L36.0969 33.4281C42.5453 30.7953 46.1562 30.1281 52.3281 30.1922L52.2969 33.3172ZM37.2781 30.0719C43.3641 27.5875 46.5641 27.0078 52.2969 27.0672L52.3281 23.9422C46.1562 23.8781 42.5469 24.5453 36.0969 27.1781L37.2781 30.0719ZM52.2969 20.8172C46.5625 20.7578 43.3641 21.3359 37.2781 23.8219L36.0969 20.9281C42.5453 18.2953 46.1562 17.6281 52.3281 17.6922L52.2969 20.8172ZM48.4063 13V8.3125H51.5313V13H48.4063ZM42.9375 9.875V14.5625H46.0625V9.875H42.9375ZM37.4688 16.125V11.4375H40.5938V16.125H37.4688ZM11.7031 33.3172C17.4375 33.2578 20.6359 33.8359 26.7219 36.3219L27.9031 33.4281C21.4547 30.7953 17.8438 30.1281 11.6719 30.1922L11.7031 33.3172ZM26.7219 30.0719C20.6359 27.5875 17.4375 27.0078 11.7031 27.0672L11.6719 23.9422C17.8438 23.8781 21.4531 24.5453 27.9031 27.1781L26.7219 30.0719ZM11.7031 20.8172C17.4375 20.7578 20.6359 21.3359 26.7219 23.8219L27.9031 20.9281C21.4547 18.2953 17.8438 17.6281 11.6719 17.6922L11.7031 20.8172ZM15.5938 13V8.3125H12.4688V13H15.5938ZM21.0625 9.875V14.5625H17.9375V9.875H21.0625ZM26.5313 16.125V11.4375H23.4063V16.125H26.5313Z"
+                fill="currentColor"
+            />
+            <path
+                fillRule="evenodd"
+                clipRule="evenodd"
+                d="M60.125 5.16252C60.7594 5.3021 61.4068 5.45158 62.0672 5.61095C62.4051 5.69278 62.7056 5.88607 62.9202 6.15963C63.1348 6.43319 63.251 6.77108 63.25 7.11877V47.0235C63.25 48.0125 62.3391 48.75 61.3688 48.5656C51.661 46.7141 45.1188 46.5844 36.1781 47.9406C35.786 48.7117 35.1881 49.3592 34.4507 49.8114C33.7132 50.2637 32.8651 50.5031 32 50.5031C31.135 50.5031 30.2868 50.2637 29.5494 49.8114C28.8119 49.3592 28.2141 48.7117 27.8219 47.9406C18.8828 46.5844 12.3375 46.7141 2.63126 48.5656C2.4032 48.6103 2.1681 48.604 1.94274 48.5472C1.71739 48.4905 1.50735 48.3847 1.32764 48.2374C1.14792 48.09 1.00295 47.9048 0.903102 47.695C0.803251 47.4851 0.750976 47.2558 0.750011 47.0235V7.12033C0.748673 6.77237 0.86469 6.43413 1.07932 6.16024C1.29394 5.88636 1.59464 5.69284 1.93282 5.61095C2.59324 5.45158 3.24064 5.3021 3.87501 5.16252V4.44376C3.87501 3.06095 4.79532 1.79689 6.19376 1.44376C15.8031 -0.971861 22.8 1.58751 30.8141 5.31408C31.2047 5.39429 31.6 5.47762 32 5.56408C32.4 5.47762 32.7958 5.39429 33.1875 5.31408C41.2 1.58751 48.1969 -0.971862 57.8063 1.44533C58.4719 1.61477 59.0617 2.00196 59.4819 2.54531C59.9021 3.08865 60.1285 3.75692 60.125 4.44376V5.16252ZM57 41.075V4.46408C48.1594 2.25314 41.8703 4.67501 33.5625 8.58908V44.9047L33.5672 44.9078L33.5703 44.9094L33.5844 44.9141H33.5891L33.5984 44.911C41.2688 41.4391 47.9594 39.4688 56.9156 41.1031C56.9284 41.1055 56.9415 41.1052 56.9542 41.1023C56.9668 41.0993 56.9787 41.0937 56.9891 41.086L57 41.075ZM30.4328 44.9078L30.4375 44.9047V8.58908C22.1297 4.67658 15.8406 2.25314 7.00001 4.46408V41.075L7.01095 41.086C7.0214 41.0942 7.03349 41.1002 7.04643 41.1034C7.05936 41.1067 7.07283 41.1071 7.08595 41.1047C16.0391 39.4688 22.7313 41.4391 30.4016 44.9094L30.4141 44.9141L30.4328 44.9078Z"
+                fill="currentColor"
             />
         </svg>
     );
