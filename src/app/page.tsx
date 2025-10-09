@@ -1,5 +1,6 @@
 import Link from "next/link";
 import ProgramSection from "./components/ProgramSection";
+import ImpactSection from "./components/InpactSection";
 
 export default function Home() {
     return (
@@ -20,6 +21,7 @@ export default function Home() {
                 </Link>
             </div>
             <ProgramSection />
+            <ImpactSection />
         </main>
     );
 }

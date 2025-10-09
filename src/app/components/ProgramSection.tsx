@@ -34,7 +34,7 @@ const ProgramSection = () => {
             <h2 className="text-warna-1 text-center text-[40px] font-semibold">
                 Program
             </h2>
-            <div className="flex flex-col items-center gap-[45px] xl:flex-row xl:justify-center">
+            <div className="flex flex-col items-center gap-[45px] sm:flex-row sm:flex-wrap sm:justify-center">
                 <ProgramItem
                     Icon={RegisterBookIcon}
                     title="Pendidikan"
