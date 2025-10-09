@@ -1,7 +1,12 @@
 import Link from "next/link";
 import { ComponentType } from "react";
 
-import { IconProps, RegisterBookIcon } from "./Icons";
+import {
+    HealthCareIcon,
+    IconProps,
+    PeopleIcon,
+    RegisterBookIcon,
+} from "./Icons";
 
 interface Props {
     title: string;
@@ -29,7 +34,7 @@ const ProgramSection = () => {
             <h2 className="text-warna-1 text-center text-[40px] font-semibold">
                 Program
             </h2>
-            <div className="flex flex-col xl:flex-row xl:justify-center xl:gap-[45px]">
+            <div className="flex flex-col items-center gap-[45px] xl:flex-row xl:justify-center">
                 <ProgramItem
                     Icon={RegisterBookIcon}
                     title="Pendidikan"
@@ -37,13 +42,13 @@ const ProgramSection = () => {
                     url="#"
                 />
                 <ProgramItem
-                    Icon={RegisterBookIcon}
+                    Icon={HealthCareIcon}
                     title="Konseling"
                     description="Mendampingi individu dan keluarga melalui konseling yang mendukung kesehatan mental dan ketahanan hidup."
                     url="#"
                 />
                 <ProgramItem
-                    Icon={RegisterBookIcon}
+                    Icon={PeopleIcon}
                     title="Pemberdayaan Masyarakat"
                     description="Membangun kemandirian melalui pelatihan kerja, kewirausahaan, dan pendampingan komunitas."
                     url="#"
